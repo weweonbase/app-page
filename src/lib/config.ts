@@ -39,7 +39,8 @@ export const config = createConfig({
   transports: {
     [base.id]: fallback([
       http(process.env.NEXT_PUBLIC_RPC_URL),
-      webSocket(process.env.NEXT_PUBLIC_RPC_URL!?.replace('https://', 'wss://'))
+      // webSocket(process.env.NEXT_PUBLIC_RPC_URL!?.replace('https://', 'wss://'))
+      webSocket("wss://base-mainnet.infura.io/ws/v3/d92ab3de97fc461f923c45b1edfc1685")
     ]),
   },
 });

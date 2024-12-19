@@ -27,7 +27,7 @@
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "dnum": "^2.13.1",
-    "ethers": "^6.13.0",
+    "ethers": "^6.13.4",
     "graphql": "^16.9.0",
     "graphql-request": "^7.1.0",
     "lottie-react": "^2.4.0",
@@ -38,8 +38,8 @@
     "recharts": "^2.12.7",
     "sass": "^1.77.8",
     "tailwind-merge": "^2.5.2",
-    "viem": "^2.13.8",
-    "wagmi": "^2.10.0"
+    "viem": "^2.21.55",
+    "wagmi": "^2.14.3"
   },
   "devDependencies": {
     "@types/node": "22.1.0",
