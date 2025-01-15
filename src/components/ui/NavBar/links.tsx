@@ -1,4 +1,4 @@
-import { EarnIcon, MergeIcon, PoolIcon, SwapIcon } from "~/components/common/Icons";
+import { ChaosIconFill, EarnIcon, MergeIcon, PoolIcon, SwapIcon } from "~/components/common/Icons";
 
 export const PAGE_LINKS = [
   {
@@ -29,13 +29,13 @@ export const PAGE_LINKS = [
     text: "Merge",
     href: "/merge",
   },
-  // {
-  //   icon: ({ className }: { className?: string }) => (
-  //     <EarnIcon
-  //       className={className}
-  //     />
-  //   ),
-  //   text: "Earn",
-  //   href: "/earn",
-  // },
+  {
+    icon: ({ className }: { className?: string }) => (
+      <ChaosIconFill
+        className={className}
+      />
+    ),
+    text: "Chaos",
+    href: "/chaos",
+  }
 ];

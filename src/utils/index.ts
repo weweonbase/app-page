@@ -11,6 +11,14 @@ export function formatBigIntegers(num:number) {
   return num < 1 ? num.toFixed(6) : num < 9 ? num.toFixed(4) : num.toFixed(2)
 }
 
+export function truncateValues(val:any) {
+  return `${val.slice(0,4)}...${val.slice(-4)}`
+}
+
+export function thousandSeperator(val:number) {
+  return val ? Number(val).toLocaleString("en-US", { useGrouping: true }) : "";  
+}
+
 export const usdConverter = async (weiVal:bigint | undefined) => {
   const response = await fetch(ETH_TO_USD_CONVERSION_API);
   const data = await response.json();

@@ -1,15 +1,18 @@
 import clsx from "clsx";
 import { Text, TextProps } from "@mantine/core";
 import { dogica, verdana } from "~/fonts";
+import { truncateValues } from "~/utils";
 
 type TypographyProps = {
   secondary?: boolean;
+  truncate?: boolean;
   children: any;
 } & TextProps;
 
 export const Typography = ({
   secondary,
   className,
+  truncate,
   children,
   ...props
 }: TypographyProps) => {
@@ -21,7 +24,7 @@ export const Typography = ({
       )}
       {...props}
     >
-      {children}
+      {truncate ? truncateValues(children) : children}
     </Text>
   );
 };

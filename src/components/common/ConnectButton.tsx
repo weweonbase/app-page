@@ -32,7 +32,7 @@ export const ConnectButton = () => {
                   <button
                     onClick={openConnectModal}
                     type="button"
-                    className="flex items-center bg_violet text-black px-4 h-10"
+                    className="flex items-center bg_violet text-black px-3 h-14"
                   >
                     <Typography secondary size="xs" fw={700}>
                       Connect
@@ -46,7 +46,7 @@ export const ConnectButton = () => {
                   <button
                     onClick={openChainModal}
                     type="button"
-                    className="flex items-center bg_violet text-black px-4 h-10"
+                    className="flex items-center bg_violet text-black px-3 h-14"
                   >
                     <Typography secondary size="xs" fw={700}>
                       Wrong network
@@ -56,7 +56,7 @@ export const ConnectButton = () => {
               }
 
               return (
-                <div className="flex items-center gap-2 bg_violet px-2 h-10">
+                <div className="flex items-center gap-2 bg_violet px-2 h-14">
                   <button
                     onClick={openChainModal}
                     type="button"
